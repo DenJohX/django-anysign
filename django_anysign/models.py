@@ -118,7 +118,9 @@ def SignatureFactory(SignatureType):
         anysign_internal_id = UUIDField(
             verbose_name=_('ID in internal database'),
             auto=True,
-            hyphenate=True)
+            hyphenate=True,
+            blank=True
+            )
 
         class Meta:
             abstract = True
@@ -185,7 +187,9 @@ def SignerFactory(Signature):
         anysign_internal_id = UUIDField(
             verbose_name=_('ID in internal database'),
             auto=True,
-            hyphenate=True)
+            hyphenate=True,
+            blank=True
+            )
 
         class Meta:
             abstract = True

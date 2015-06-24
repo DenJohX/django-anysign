@@ -26,7 +26,6 @@ REQUIREMENTS = [
     'django-anysign',
     'django-nose',
     'setuptools',
-    'south',
 ]
 ENTRY_POINTS = {
     'console_scripts': [

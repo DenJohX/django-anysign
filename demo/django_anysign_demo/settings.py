@@ -40,7 +40,7 @@ INSTALLED_APPS = (
     # The actual django-anysign demo.
     'django_anysign_demo',
     # Third-parties.
-    'south',
+    # 'south',
     # Standard Django applications.
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -79,6 +79,11 @@ NOSE_ARGS = [
 ]
 SOUTH_TESTS_MIGRATE = False
 
+
+MIDDLEWARE_CLASSES = (
+    'django.middleware.common.CommonMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware'
+)
 
 LOGGING = {
     'version': 1,
